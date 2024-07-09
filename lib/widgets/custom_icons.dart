@@ -20,6 +20,7 @@ class CustomIcon extends StatelessWidget {
         icon: Icon(
           icon,
           size: 28,
+          color: Colors.white,
         ),
       ),
     );
