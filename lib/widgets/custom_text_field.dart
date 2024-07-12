@@ -26,6 +26,8 @@ class CustomTextField extends StatelessWidget {
       cursorColor: kPrimaryColor,
       maxLines: maxLines,
       decoration: InputDecoration(
+          errorStyle: const TextStyle(color: Colors.red),
+          errorBorder: buildBorder(Colors.red),
           hintText: hint,
           hintStyle: const TextStyle(color: kPrimaryColor),
           border: buildBorder(),
