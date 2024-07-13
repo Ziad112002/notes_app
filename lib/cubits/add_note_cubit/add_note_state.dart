@@ -1,7 +1,7 @@
 part of 'add_note_cubit.dart';
 
 @immutable
-sealed class AddNoteState {}
+class AddNoteState {}
 
 class AddNoteInitial extends AddNoteState {}
 
