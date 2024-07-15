@@ -48,11 +48,11 @@ class _AddNoteFormState extends State<AddNoteForm> {
             maxLines: 5,
           ),
           const SizedBox(
-            height: 25,
+            height: 30,
           ),
-          ColorListView(),
+          const ColorListView(),
           const SizedBox(
-            height: 25,
+            height: 30,
           ),
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
@@ -67,7 +67,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                         title: title!,
                         subTitle: subTitle!,
                         date: date,
-                        color: Color(0xffd5bca2).value);
+                        color: const Color(0xffd5bca2).value);
                     BlocProvider.of<AddNoteCubit>(context).addNote(noteModel);
                   } else {
                     autovalidateMode = AutovalidateMode.always;
